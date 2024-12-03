@@ -11,7 +11,17 @@ class Program
         Console.Write("Zadajte názov výstupného súboru + jeho formát: ");
         string outputFile = Console.ReadLine();
         Console.Write("Zadajte typ vstupných dát (typ1 alebo typ2): ");
+        string formatType = Console.ReadLine().ToLower();
+        string formatTypeB = formatType + ".txt";
+        
 
+        if (inputFile != formatTypeB)
+        {
+            Console.WriteLine("Súbor už v požadovanom formáte je.");
+        }
+        else
+        {
+        
         
 
 
